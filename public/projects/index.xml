@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Projects on Harsh Malik</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content in Projects on Harsh Malik</description>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fashion Image Recognition – CNN with 98% Accuracy</title>
+      <link>http://localhost:1313/projects/image_recognition_model/</link>
+      <pubDate>Tue, 07 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/image_recognition_model/</guid>
+      <description>&lt;p&gt;This project implements a modern &lt;strong&gt;Convolutional Neural Network&lt;/strong&gt; trained on the &lt;strong&gt;Fashion-MNIST&lt;/strong&gt; dataset.&lt;/p&gt;
+&lt;h3 id=&#34;highlights&#34;&gt;Highlights&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Trained on 10,000+ images of clothing (bags, sneakers, shirts, t-shirts, etc.)&lt;/li&gt;
+&lt;li&gt;Achieved around &lt;strong&gt;98% accuracy&lt;/strong&gt; on the test set&lt;/li&gt;
+&lt;li&gt;Includes:
+&lt;ul&gt;
+&lt;li&gt;Model definition (&lt;code&gt;model_class.py&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Data utilities (&lt;code&gt;data.py&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;A small &lt;strong&gt;Streamlit app&lt;/strong&gt; (&lt;code&gt;streamlit_app.py&lt;/code&gt;) for interactive inference&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It’s a concrete example of:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Building and training a non-trivial model&lt;/li&gt;
+&lt;li&gt;Structuring code into reusable components&lt;/li&gt;
+&lt;li&gt;Wrapping models in a &lt;strong&gt;simple app&lt;/strong&gt; for demos or stakeholders&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Tkinter Stock Market Widget</title>
+      <link>http://localhost:1313/projects/stock_market_widget/</link>
+      <pubDate>Mon, 06 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/stock_market_widget/</guid>
+      <description>&lt;p&gt;A small &lt;strong&gt;desktop widget&lt;/strong&gt; built using Tkinter to track:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Market indices&lt;/li&gt;
+&lt;li&gt;Selected individual stocks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The goal was to have a lightweight, always-on-top widget that let me keep an eye on markets without a full browser or terminal session.&lt;/p&gt;
+&lt;p&gt;It is simple, but it shows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Comfort with &lt;strong&gt;Tkinter&lt;/strong&gt; and UI basics&lt;/li&gt;
+&lt;li&gt;Ability to turn an idea into a working tool, even if minimal&lt;/li&gt;
+&lt;li&gt;Willingness to iterate on design and usability&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Personal Finance Dashboard – Net Worth &amp; Asset Allocation</title>
+      <link>http://localhost:1313/projects/finance_dashboard/</link>
+      <pubDate>Sun, 05 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/finance_dashboard/</guid>
+      <description>&lt;p&gt;This project is a blueprint for a &lt;strong&gt;personal finance dashboard&lt;/strong&gt; to track:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bank balances and interest rates&lt;/li&gt;
+&lt;li&gt;Indian equity holdings + prices&lt;/li&gt;
+&lt;li&gt;Mutual fund units + NAVs&lt;/li&gt;
+&lt;li&gt;PPF holdings + interest&lt;/li&gt;
+&lt;li&gt;Gold holdings and prices&lt;/li&gt;
+&lt;li&gt;US stocks&lt;/li&gt;
+&lt;li&gt;Credit card balances&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The &lt;code&gt;Outline.txt&lt;/code&gt; in the repo documents the thought process:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What do we need to keep track of?&lt;br&gt;
+What should the dashboard show daily?&lt;br&gt;
+How can we alert on big moves?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Portfolio Viewer – CLI tool with SQLite &#43; Yahoo Finance</title>
+      <link>http://localhost:1313/projects/portfolio_sql_cli_tool/</link>
+      <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/portfolio_sql_cli_tool/</guid>
+      <description>&lt;p&gt;A &lt;strong&gt;command-line portfolio tracker&lt;/strong&gt; that stores holdings in a local &lt;strong&gt;SQLite database&lt;/strong&gt; and fetches prices automatically from &lt;strong&gt;Yahoo Finance&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Originally built as my &lt;strong&gt;CS50 final project&lt;/strong&gt;, but designed to be genuinely useful.&lt;/p&gt;
+&lt;h3 id=&#34;features&#34;&gt;Features&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Add stocks with quantity – price is auto-fetched from Yahoo Finance&lt;/li&gt;
+&lt;li&gt;View portfolio in a nicely formatted table using &lt;code&gt;tabulate&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;See live values in your terminal without opening a browser or Excel&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;tech&#34;&gt;Tech&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;li&gt;SQLite (via &lt;code&gt;sqlite3&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;yfinance&lt;/code&gt; for market data&lt;/li&gt;
+&lt;li&gt;Clean, argument-based CLI (&lt;code&gt;portfolio_tool.py&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This project shows my comfort with &lt;strong&gt;Python, databases, APIs, and building real tools&lt;/strong&gt;, not just notebooks.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Text-to-SQL Finetuned LLMs</title>
+      <link>http://localhost:1313/projects/finetuned_sql_llms/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/finetuned_sql_llms/</guid>
+      <description>&lt;p&gt;In this project, I fine-tuned small language models to convert &lt;strong&gt;English questions → SQL queries&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;goal&#34;&gt;Goal&lt;/h3&gt;
+&lt;p&gt;Make it easy for non-technical users to query structured data by just typing:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Show me all users who signed up last week with more than 3 orders&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;and get back:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; users
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;WHERE&lt;/span&gt; signup_date &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; DATE(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;now&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;-7 days&amp;#39;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;AND&lt;/span&gt; order_count &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;What&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;’&lt;/span&gt;s inside
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;•&lt;/span&gt;	Finetune_SQL.ipynb &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;–&lt;/span&gt; notebook &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; preparing training &lt;span style=&#34;color:#66d9ef&#34;&gt;data&lt;/span&gt;, formatting prompts, &lt;span style=&#34;color:#66d9ef&#34;&gt;and&lt;/span&gt; running the fine&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;tuning loop
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;•&lt;/span&gt;	README &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; the high&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;level&lt;/span&gt; idea
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>sparse_nano_transformer – Iterating on the base transformer</title>
+      <link>http://localhost:1313/projects/sparse_nano_transformers/</link>
+      <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/sparse_nano_transformers/</guid>
+      <description>&lt;p&gt;This repo extends the original &lt;code&gt;nano_transformers&lt;/code&gt; work into a more experimental playground.&lt;/p&gt;
+&lt;p&gt;I use it to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Try out &lt;strong&gt;sparser&lt;/strong&gt; or more efficient variants of the transformer&lt;/li&gt;
+&lt;li&gt;Prototype changes to attention, batching, or training setups&lt;/li&gt;
+&lt;li&gt;Keep my understanding fresh by tweaking and breaking things&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It reflects how I learn: start with a clean baseline, then &lt;strong&gt;iterate, refactor, and experiment&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>nano_transformers – Building a GPT-style model from scratch</title>
+      <link>http://localhost:1313/projects/nano_transformers/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/nano_transformers/</guid>
+      <description>&lt;p&gt;I built a small &lt;strong&gt;decoder-only transformer (Shakespeare GPT)&lt;/strong&gt; from scratch in PyTorch, inspired by Andrej Karpathy’s nanoGPT series.&lt;/p&gt;
+&lt;h3 id=&#34;why-i-built-this&#34;&gt;Why I built this&lt;/h3&gt;
+&lt;p&gt;There’s only one real way to understand transformers — &lt;strong&gt;implement them yourself&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tokenization&lt;/li&gt;
+&lt;li&gt;Embeddings&lt;/li&gt;
+&lt;li&gt;Multi-head self-attention&lt;/li&gt;
+&lt;li&gt;Residual connections&lt;/li&gt;
+&lt;li&gt;Training loop &amp;amp; sampling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;whats-inside-the-repo&#34;&gt;What’s inside the repo&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;bigram.ipynb&lt;/code&gt; – main notebook implementing and training the model&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;train.py&lt;/code&gt; – script to train on a dataset end-to-end&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;inferencing_trained_model.ipynb&lt;/code&gt; – sampling from the trained model and generating Shakespeare-like text&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The model was trained on a &lt;strong&gt;Tesla T4 GPU&lt;/strong&gt;, and I was able to drive the training loss down to around &lt;strong&gt;0.97&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
