@@ -176,6 +176,27 @@
   background: rgba(0, 0, 0, 0.03);
 }
 
+@media (max-width: 640px) {
+  .about-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-primary,
+  .btn-ghost {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .btn-with-icon {
+    justify-content: center;
+  }
+
+  .about-more-contact {
+    text-align: left;
+  }
+}
+
 /* Dark mode tweaks */
 [data-theme="dark"] .btn-ghost:hover {
   background: rgba(255, 255, 255, 0.08);
@@ -187,3 +208,34 @@
   color: var(--secondary);
 }
 
+/* ===== Mobile tweaks ===== */
+@media (max-width: 768px) {
+  /* Let hero breathe on the sides and shrink padding on small screens */
+  .home-hero {
+    margin: 1rem 1rem 2rem;
+    padding: 1.5rem 1.25rem 2rem;
+    border-radius: 1.25rem;
+  }
+
+  .home-projects {
+    margin: 0 1rem 2.5rem;
+  }
+
+  .home-projects h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  /* Make project cards single-column and comfy */
+  .project-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  .project-card {
+    padding: 1.25rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  }
+}
