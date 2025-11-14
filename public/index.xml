@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Harsh Malik</title>
+    <title>Home on Nano Labs</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Harsh Malik</description>
+    <description>Recent content in Home on Nano Labs</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 07 Jan 2025 00:00:00 +0000</lastBuildDate>
@@ -154,11 +154,13 @@ How can we alert on big moves?&lt;/p&gt;</description>
 &lt;p&gt;The model was trained on a &lt;strong&gt;Tesla T4 GPU&lt;/strong&gt;, and I was able to drive the training loss down to around &lt;strong&gt;0.97&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>About Me</title>
+      <title>About</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description>&lt;p&gt;I am a Risk, Treasury &amp;amp; AI professional&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;I’m &lt;strong&gt;Harsh Malik&lt;/strong&gt;, a curiosity-driven builder who likes working where&lt;br&gt;
+&lt;strong&gt;machine learning, AI tooling, and financial systems&lt;/strong&gt; intersect.&lt;/p&gt;
+&lt;p&gt;Right now I’m a &lt;strong&gt;Product Analyst – AI &amp;amp; Data&lt;/strong&gt; at Citi, where I help design and test GenAI tools (OpenAI, Gemini, RAG) to make real workflows faster and less painful. Before that, I worked in &lt;strong&gt;Financial Planning &amp;amp; Analysis&lt;/strong&gt;, building forecasting models, KPIs, and dashboards for a UK pension fund client.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
