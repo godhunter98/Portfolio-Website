@@ -1,6 +1,7 @@
 ---
 title: "Personal Finance Dashboard – Net Worth & Asset Allocation"
 date: 2025-01-05
+hiddenInHomeList: true
 ---
 
 This project is a blueprint for a **personal finance dashboard** to track:

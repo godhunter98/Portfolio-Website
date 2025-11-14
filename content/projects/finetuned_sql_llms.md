@@ -1,6 +1,7 @@
 ---
 title: "Text-to-SQL Finetuned LLMs"
 date: 2025-01-03
+hiddenInHomeList: true
 ---
 
 In this project, I fine-tuned small language models to convert **English questions → SQL queries**.
@@ -18,6 +19,7 @@ SELECT *
 FROM users
 WHERE signup_date >= DATE('now', '-7 days')
   AND order_count > 3;
+```
 
 What’s inside
 	•	Finetune_SQL.ipynb – notebook for preparing training data, formatting prompts, and running the fine-tuning loop

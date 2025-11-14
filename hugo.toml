@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "Nano Labs"
 theme = "PaperMod"
 publishDir = "docs"
+enableRobotsTXT = true
 
 
 [pagination]
@@ -16,7 +17,9 @@ publishDir = "docs"
   ShowBreadCrumbs = true
   ShowPostNavLinks = true
   ShowToc = false
-  mainSections = ["blog"]
+  mainSections = ["projects"]
+  description = "Nano Labs – Harsh Malik's experiments in machine learning, AI tooling, and financial systems."
+  author = "Harsh Malik"
 
 
 [[params.socialIcons]]
@@ -44,6 +47,10 @@ publishDir = "docs"
     url  = "/about/"
     weight = 3
 
+  [[menu.main]]
+    name = "Get in Touch"
+    url  = "/get_in_touch/"
+    weight = 4
   
 
 

@@ -110,11 +110,9 @@ How can we alert on big moves?&lt;/p&gt;</description>
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;FROM&lt;/span&gt; users
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;WHERE&lt;/span&gt; signup_date &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt; DATE(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;now&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;-7 days&amp;#39;&lt;/span&gt;)
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;AND&lt;/span&gt; order_count &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;What&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;’&lt;/span&gt;s inside
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;•&lt;/span&gt;	Finetune_SQL.ipynb &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;–&lt;/span&gt; notebook &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; preparing training &lt;span style=&#34;color:#66d9ef&#34;&gt;data&lt;/span&gt;, formatting prompts, &lt;span style=&#34;color:#66d9ef&#34;&gt;and&lt;/span&gt; running the fine&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;tuning loop
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;	&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;•&lt;/span&gt;	README &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; the high&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;level&lt;/span&gt; idea
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;What’s inside
+•	Finetune_SQL.ipynb – notebook for preparing training data, formatting prompts, and running the fine-tuning loop
+•	README with the high-level idea&lt;/p&gt;</description>
     </item>
     <item>
       <title>sparse_nano_transformer – Iterating on the base transformer</title>

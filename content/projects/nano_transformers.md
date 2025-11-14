@@ -1,6 +1,7 @@
 ---
 title: "nano_transformers – Building a GPT-style model from scratch"
 date: 2025-01-01
+hiddenInHomeList: true
 ---
 
 I built a small **decoder-only transformer (Shakespeare GPT)** from scratch in PyTorch, inspired by Andrej Karpathy’s nanoGPT series.

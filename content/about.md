@@ -9,6 +9,28 @@ Right now I’m a **Product Analyst – AI & Data** at Citi, where I help design
 
 ---
 
+## Get in touch
+
+If you’d like to talk about roles, collaborations, or projects, here are the easiest ways to reach me.
+
+<div class="about-actions">
+  <button type="button" class="btn-primary" id="copy-email-btn">
+    📧 Copy email
+  </button>
+  <a class="btn-ghost"
+     href="/Harsh_Malik_Resume_2025.pdf"
+     target="_blank"
+     rel="noopener noreferrer">
+    📄 View Résumé
+  </a>
+</div>
+
+<p class="about-more-contact">
+  Prefer LinkedIn or want more options? See the <a href="/get-in-touch/">Get in Touch</a> page.
+</p>
+
+---
+
 ## 🧠 What I like working on
 
 I’m happiest when I’m building things that are both **technical and useful**:
@@ -91,3 +113,29 @@ That’s how I’ve approached:
 
 If any of this overlaps with what you’re building—or what your team is hiring for—  
 I’d love to talk.
+
+
+
+<!-- The script to copy email to clipboard! -->
+<script>
+  (function () {
+    const btn = document.getElementById("copy-email-btn");
+    if (!btn) return;
+
+    const email = "harshworkspace@gmail.com";
+
+    btn.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(email);
+        const originalText = btn.textContent;
+        btn.textContent = "Copied!";
+        setTimeout(() => {
+          btn.textContent = originalText;
+        }, 1500);
+      } catch (err) {
+        console.error("Clipboard error:", err);
+        alert("Could not copy email. Please copy manually: " + email);
+      }
+    });
+  })();
+</script>

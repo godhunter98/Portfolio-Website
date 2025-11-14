@@ -1,6 +1,7 @@
 ---
 title: "sparse_nano_transformer – Iterating on the base transformer"
 date: 2025-01-02
+hiddenInHomeList: true
 ---
 
 This repo extends the original `nano_transformers` work into a more experimental playground.
