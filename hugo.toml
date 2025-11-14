@@ -1,7 +1,8 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://godhunter98.github.io/Portfolio-Website/"
 languageCode = "en-us"
 title = "Nano Labs"
 theme = "PaperMod"
+publishDir = "docs"
 
 
 [pagination]

@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>http://localhost:1313/Portfolio-Website/blog/</loc>
     <lastmod>2025-11-14T11:15:50+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/Portfolio-Website/</loc>
     <lastmod>2025-11-14T11:15:50+05:30</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/image_recognition_model/</loc>
+    <loc>http://localhost:1313/Portfolio-Website/projects/image_recognition_model/</loc>
     <lastmod>2025-01-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>http://localhost:1313/Portfolio-Website/projects/</loc>
     <lastmod>2025-01-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/stock_market_widget/</loc>
+    <loc>http://localhost:1313/Portfolio-Website/projects/stock_market_widget/</loc>
     <lastmod>2025-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/finance_dashboard/</loc>
+    <loc>http://localhost:1313/Portfolio-Website/projects/finance_dashboard/</loc>
     <lastmod>2025-01-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/portfolio_sql_cli_tool/</loc>
+    <loc>http://localhost:1313/Portfolio-Website/projects/portfolio_sql_cli_tool/</loc>
     <lastmod>2025-01-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/finetuned_sql_llms/</loc>
+    <loc>http://localhost:1313/Portfolio-Website/projects/finetuned_sql_llms/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/sparse_nano_transformers/</loc>
+    <loc>http://localhost:1313/Portfolio-Website/projects/sparse_nano_transformers/</loc>
     <lastmod>2025-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/nano_transformers/</loc>
+    <loc>http://localhost:1313/Portfolio-Website/projects/nano_transformers/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://localhost:1313/Portfolio-Website/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:1313/Portfolio-Website/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:1313/Portfolio-Website/tags/</loc>
   </url>
 </urlset>

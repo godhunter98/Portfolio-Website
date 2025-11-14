@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Home on Nano Labs</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:1313/Portfolio-Website/</link>
     <description>Recent content in Home on Nano Labs</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 07 Jan 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/Portfolio-Website/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fashion Image Recognition – CNN with 98% Accuracy</title>
-      <link>http://localhost:1313/projects/image_recognition_model/</link>
+      <link>http://localhost:1313/Portfolio-Website/projects/image_recognition_model/</link>
       <pubDate>Tue, 07 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/image_recognition_model/</guid>
+      <guid>http://localhost:1313/Portfolio-Website/projects/image_recognition_model/</guid>
       <description>&lt;p&gt;This project implements a modern &lt;strong&gt;Convolutional Neural Network&lt;/strong&gt; trained on the &lt;strong&gt;Fashion-MNIST&lt;/strong&gt; dataset.&lt;/p&gt;
 &lt;h3 id=&#34;highlights&#34;&gt;Highlights&lt;/h3&gt;
 &lt;ul&gt;
@@ -35,9 +35,9 @@
     </item>
     <item>
       <title>Tkinter Stock Market Widget</title>
-      <link>http://localhost:1313/projects/stock_market_widget/</link>
+      <link>http://localhost:1313/Portfolio-Website/projects/stock_market_widget/</link>
       <pubDate>Mon, 06 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/stock_market_widget/</guid>
+      <guid>http://localhost:1313/Portfolio-Website/projects/stock_market_widget/</guid>
       <description>&lt;p&gt;A small &lt;strong&gt;desktop widget&lt;/strong&gt; built using Tkinter to track:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Market indices&lt;/li&gt;
@@ -53,9 +53,9 @@
     </item>
     <item>
       <title>Personal Finance Dashboard – Net Worth &amp; Asset Allocation</title>
-      <link>http://localhost:1313/projects/finance_dashboard/</link>
+      <link>http://localhost:1313/Portfolio-Website/projects/finance_dashboard/</link>
       <pubDate>Sun, 05 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/finance_dashboard/</guid>
+      <guid>http://localhost:1313/Portfolio-Website/projects/finance_dashboard/</guid>
       <description>&lt;p&gt;This project is a blueprint for a &lt;strong&gt;personal finance dashboard&lt;/strong&gt; to track:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Bank balances and interest rates&lt;/li&gt;
@@ -74,9 +74,9 @@ How can we alert on big moves?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Portfolio Viewer – CLI tool with SQLite &#43; Yahoo Finance</title>
-      <link>http://localhost:1313/projects/portfolio_sql_cli_tool/</link>
+      <link>http://localhost:1313/Portfolio-Website/projects/portfolio_sql_cli_tool/</link>
       <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/portfolio_sql_cli_tool/</guid>
+      <guid>http://localhost:1313/Portfolio-Website/projects/portfolio_sql_cli_tool/</guid>
       <description>&lt;p&gt;A &lt;strong&gt;command-line portfolio tracker&lt;/strong&gt; that stores holdings in a local &lt;strong&gt;SQLite database&lt;/strong&gt; and fetches prices automatically from &lt;strong&gt;Yahoo Finance&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Originally built as my &lt;strong&gt;CS50 final project&lt;/strong&gt;, but designed to be genuinely useful.&lt;/p&gt;
 &lt;h3 id=&#34;features&#34;&gt;Features&lt;/h3&gt;
@@ -96,9 +96,9 @@ How can we alert on big moves?&lt;/p&gt;</description>
     </item>
     <item>
       <title>Text-to-SQL Finetuned LLMs</title>
-      <link>http://localhost:1313/projects/finetuned_sql_llms/</link>
+      <link>http://localhost:1313/Portfolio-Website/projects/finetuned_sql_llms/</link>
       <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/finetuned_sql_llms/</guid>
+      <guid>http://localhost:1313/Portfolio-Website/projects/finetuned_sql_llms/</guid>
       <description>&lt;p&gt;In this project, I fine-tuned small language models to convert &lt;strong&gt;English questions → SQL queries&lt;/strong&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;goal&#34;&gt;Goal&lt;/h3&gt;
 &lt;p&gt;Make it easy for non-technical users to query structured data by just typing:&lt;/p&gt;
@@ -118,9 +118,9 @@ How can we alert on big moves?&lt;/p&gt;</description>
     </item>
     <item>
       <title>sparse_nano_transformer – Iterating on the base transformer</title>
-      <link>http://localhost:1313/projects/sparse_nano_transformers/</link>
+      <link>http://localhost:1313/Portfolio-Website/projects/sparse_nano_transformers/</link>
       <pubDate>Thu, 02 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/sparse_nano_transformers/</guid>
+      <guid>http://localhost:1313/Portfolio-Website/projects/sparse_nano_transformers/</guid>
       <description>&lt;p&gt;This repo extends the original &lt;code&gt;nano_transformers&lt;/code&gt; work into a more experimental playground.&lt;/p&gt;
 &lt;p&gt;I use it to:&lt;/p&gt;
 &lt;ul&gt;
@@ -132,9 +132,9 @@ How can we alert on big moves?&lt;/p&gt;</description>
     </item>
     <item>
       <title>nano_transformers – Building a GPT-style model from scratch</title>
-      <link>http://localhost:1313/projects/nano_transformers/</link>
+      <link>http://localhost:1313/Portfolio-Website/projects/nano_transformers/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/nano_transformers/</guid>
+      <guid>http://localhost:1313/Portfolio-Website/projects/nano_transformers/</guid>
       <description>&lt;p&gt;I built a small &lt;strong&gt;decoder-only transformer (Shakespeare GPT)&lt;/strong&gt; from scratch in PyTorch, inspired by Andrej Karpathy’s nanoGPT series.&lt;/p&gt;
 &lt;h3 id=&#34;why-i-built-this&#34;&gt;Why I built this&lt;/h3&gt;
 &lt;p&gt;There’s only one real way to understand transformers — &lt;strong&gt;implement them yourself&lt;/strong&gt;:&lt;/p&gt;
@@ -155,9 +155,9 @@ How can we alert on big moves?&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <link>http://localhost:1313/Portfolio-Website/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>http://localhost:1313/Portfolio-Website/about/</guid>
       <description>&lt;p&gt;I’m &lt;strong&gt;Harsh Malik&lt;/strong&gt;, a curiosity-driven builder who likes working where&lt;br&gt;
 &lt;strong&gt;machine learning, AI tooling, and financial systems&lt;/strong&gt; intersect.&lt;/p&gt;
 &lt;p&gt;Right now I’m a &lt;strong&gt;Product Analyst – AI &amp;amp; Data&lt;/strong&gt; at Citi, where I help design and test GenAI tools (OpenAI, Gemini, RAG) to make real workflows faster and less painful. Before that, I worked in &lt;strong&gt;Financial Planning &amp;amp; Analysis&lt;/strong&gt;, building forecasting models, KPIs, and dashboards for a UK pension fund client.&lt;/p&gt;</description>

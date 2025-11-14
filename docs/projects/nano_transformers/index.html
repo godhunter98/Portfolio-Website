@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>nano_transformers – Building a GPT-style model from scratch | Nano Labs</title>
+<meta name="keywords" content="">
+<meta name="description" content="I built a small decoder-only transformer (Shakespeare GPT) from scratch in PyTorch, inspired by Andrej Karpathy’s nanoGPT series.
+Why I built this
+There’s only one real way to understand transformers — implement them yourself:
+
+Tokenization
+Embeddings
+Multi-head self-attention
+Residual connections
+Training loop &amp; sampling
+
+What’s inside the repo
+
+bigram.ipynb – main notebook implementing and training the model
+train.py – script to train on a dataset end-to-end
+inferencing_trained_model.ipynb – sampling from the trained model and generating Shakespeare-like text
+
+The model was trained on a Tesla T4 GPU, and I was able to drive the training loss down to around 0.97.">
+<meta name="author" content="">
+<link rel="canonical" href="https://godhunter98.github.io/Portfolio-Website/projects/nano_transformers/">
+<link crossorigin="anonymous" href="/Portfolio-Website/assets/css/stylesheet.79354d7da4f9a56dbb207ae7e5a16e989423a56fae7fae09a15847f58a074da8.css" integrity="sha256-eTVNfaT5pW27IHrn5aFumJQjpW&#43;uf64JoVhH9YoHTag=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://godhunter98.github.io/Portfolio-Website/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://godhunter98.github.io/Portfolio-Website/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://godhunter98.github.io/Portfolio-Website/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://godhunter98.github.io/Portfolio-Website/apple-touch-icon.png">
+<link rel="mask-icon" href="https://godhunter98.github.io/Portfolio-Website/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="https://godhunter98.github.io/Portfolio-Website/projects/nano_transformers/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            .list::-webkit-scrollbar-thumb {
+                border-color: var(--code-bg);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="https://godhunter98.github.io/Portfolio-Website/projects/nano_transformers/">
+  <meta property="og:site_name" content="Nano Labs">
+  <meta property="og:title" content="nano_transformers – Building a GPT-style model from scratch">
+  <meta property="og:description" content="I built a small decoder-only transformer (Shakespeare GPT) from scratch in PyTorch, inspired by Andrej Karpathy’s nanoGPT series.
+Why I built this There’s only one real way to understand transformers — implement them yourself:
+Tokenization Embeddings Multi-head self-attention Residual connections Training loop &amp; sampling What’s inside the repo bigram.ipynb – main notebook implementing and training the model train.py – script to train on a dataset end-to-end inferencing_trained_model.ipynb – sampling from the trained model and generating Shakespeare-like text The model was trained on a Tesla T4 GPU, and I was able to drive the training loss down to around 0.97.">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+    <meta property="article:published_time" content="2025-01-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-01-01T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="nano_transformers – Building a GPT-style model from scratch">
+<meta name="twitter:description" content="I built a small decoder-only transformer (Shakespeare GPT) from scratch in PyTorch, inspired by Andrej Karpathy’s nanoGPT series.
+Why I built this
+There’s only one real way to understand transformers — implement them yourself:
+
+Tokenization
+Embeddings
+Multi-head self-attention
+Residual connections
+Training loop &amp; sampling
+
+What’s inside the repo
+
+bigram.ipynb – main notebook implementing and training the model
+train.py – script to train on a dataset end-to-end
+inferencing_trained_model.ipynb – sampling from the trained model and generating Shakespeare-like text
+
+The model was trained on a Tesla T4 GPU, and I was able to drive the training loss down to around 0.97.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Projects",
+      "item": "https://godhunter98.github.io/Portfolio-Website/projects/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "nano_transformers – Building a GPT-style model from scratch",
+      "item": "https://godhunter98.github.io/Portfolio-Website/projects/nano_transformers/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "nano_transformers – Building a GPT-style model from scratch",
+  "name": "nano_transformers – Building a GPT-style model from scratch",
+  "description": "I built a small decoder-only transformer (Shakespeare GPT) from scratch in PyTorch, inspired by Andrej Karpathy’s nanoGPT series.\nWhy I built this There’s only one real way to understand transformers — implement them yourself:\nTokenization Embeddings Multi-head self-attention Residual connections Training loop \u0026amp; sampling What’s inside the repo bigram.ipynb – main notebook implementing and training the model train.py – script to train on a dataset end-to-end inferencing_trained_model.ipynb – sampling from the trained model and generating Shakespeare-like text The model was trained on a Tesla T4 GPU, and I was able to drive the training loss down to around 0.97.\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "I built a small decoder-only transformer (Shakespeare GPT) from scratch in PyTorch, inspired by Andrej Karpathy’s nanoGPT series.\nWhy I built this There’s only one real way to understand transformers — implement them yourself:\nTokenization Embeddings Multi-head self-attention Residual connections Training loop \u0026 sampling What’s inside the repo bigram.ipynb – main notebook implementing and training the model train.py – script to train on a dataset end-to-end inferencing_trained_model.ipynb – sampling from the trained model and generating Shakespeare-like text The model was trained on a Tesla T4 GPU, and I was able to drive the training loss down to around 0.97.\nWhy it matters This project shows:\nI understand the internals of transformers, not just how to call an API I can read theory, translate it to working code, and diagnose training behaviour I care about doing things the “hard way” at least once to deeply learn them ",
+  "wordCount" : "146",
+  "inLanguage": "en",
+  "datePublished": "2025-01-01T00:00:00Z",
+  "dateModified": "2025-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://godhunter98.github.io/Portfolio-Website/projects/nano_transformers/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nano Labs",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://godhunter98.github.io/Portfolio-Website/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://godhunter98.github.io/Portfolio-Website/" accesskey="h" title="Nano Labs (Alt + H)">Nano Labs</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://godhunter98.github.io/Portfolio-Website/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://godhunter98.github.io/Portfolio-Website/projects/" title="Projects">
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://godhunter98.github.io/Portfolio-Website/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://godhunter98.github.io/Portfolio-Website/">Home</a>&nbsp;»&nbsp;<a href="https://godhunter98.github.io/Portfolio-Website/projects/">Projects</a></div>
+    <h1 class="post-title entry-hint-parent">
+      nano_transformers – Building a GPT-style model from scratch
+    </h1>
+    <div class="post-meta"><span title='2025-01-01 00:00:00 +0000 UTC'>January 1, 2025</span>&nbsp;·&nbsp;<span>1 min</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>I built a small <strong>decoder-only transformer (Shakespeare GPT)</strong> from scratch in PyTorch, inspired by Andrej Karpathy’s nanoGPT series.</p>
+<h3 id="why-i-built-this">Why I built this<a hidden class="anchor" aria-hidden="true" href="#why-i-built-this">#</a></h3>
+<p>There’s only one real way to understand transformers — <strong>implement them yourself</strong>:</p>
+<ul>
+<li>Tokenization</li>
+<li>Embeddings</li>
+<li>Multi-head self-attention</li>
+<li>Residual connections</li>
+<li>Training loop &amp; sampling</li>
+</ul>
+<h3 id="whats-inside-the-repo">What’s inside the repo<a hidden class="anchor" aria-hidden="true" href="#whats-inside-the-repo">#</a></h3>
+<ul>
+<li><code>bigram.ipynb</code> – main notebook implementing and training the model</li>
+<li><code>train.py</code> – script to train on a dataset end-to-end</li>
+<li><code>inferencing_trained_model.ipynb</code> – sampling from the trained model and generating Shakespeare-like text</li>
+</ul>
+<p>The model was trained on a <strong>Tesla T4 GPU</strong>, and I was able to drive the training loss down to around <strong>0.97</strong>.</p>
+<h3 id="why-it-matters">Why it matters<a hidden class="anchor" aria-hidden="true" href="#why-it-matters">#</a></h3>
+<p>This project shows:</p>
+<ul>
+<li>I understand the internals of <strong>transformers</strong>, not just how to call an API</li>
+<li>I can read theory, translate it to working code, and diagnose training behaviour</li>
+<li>I care about doing things the “hard way” at least once to deeply learn them</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://godhunter98.github.io/Portfolio-Website/">Nano Labs</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>
