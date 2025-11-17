@@ -2,6 +2,7 @@
 title: "Tkinter Stock Market Widget"
 date: 2025-01-06
 hiddenInHomeList: true
+type : "Finance Tools"
 ---
 
 A small **desktop widget** built using Tkinter to track:

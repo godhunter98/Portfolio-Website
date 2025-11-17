@@ -1,0 +1,55 @@
+{{ define "main" }}
+<main class="main projects-page">
+
+  <!-- Header -->
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}
+      <div class="page-description">
+        {{ . }}
+      </div>
+    {{ end }}
+  </header>
+  {{/* Only render the projects grid and paginator on non-home list pages. */}}
+  {{ if not .IsHome }}
+    <!-- 3×3 grid of project cards (9 per page) -->
+    {{ $paginator := .Paginate (.Pages.ByDate.Reverse) 9 }}
+
+    <section class="projects-grid">
+      {{ range $paginator.Pages }}
+        <a class="project-card project-card--smol" href="{{ .RelPermalink }}">
+          <div class="project-card-head">
+            <span class="project-type">
+              {{ with .Params.type }}{{ . }}{{ else }}Project{{ end }}
+            </span>
+          </div>
+
+          <div class="project-card-body">
+            <h3>{{ .Title }}</h3>
+
+            {{ with .Params.summary }}
+              <p>{{ . }}</p>
+            {{ else }}
+              <p>{{ .Plain | truncate 120 }}</p>
+            {{ end }}
+
+            {{ with .Params.tags }}
+              <p class="project-tags">
+                {{ delimit . " · " }}
+              </p>
+            {{ end }}
+          </div>
+
+          <div class="project-card-footer">
+            <span>Explore project</span>
+          </div>
+        </a>
+      {{ end }}
+    </section>
+
+    <!-- Pagination controls if you ever have >9 projects -->
+    {{ template "_internal/pagination.html" . }}
+  {{ end }}
+
+</main>
+{{ end }}

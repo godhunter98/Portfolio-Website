@@ -2,6 +2,7 @@
 title: "Portfolio Viewer – CLI tool with SQLite + Yahoo Finance"
 date: 2025-01-04
 hiddenInHomeList: true
+type : "Finance Tools"
 ---
 
 A **command-line portfolio tracker** that stores holdings in a local **SQLite database** and fetches prices automatically from **Yahoo Finance**.

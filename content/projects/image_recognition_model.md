@@ -2,6 +2,7 @@
 title: "Fashion Image Recognition – CNN with 98% Accuracy"
 date: 2025-01-07
 hiddenInHomeList: true
+type : "Computer Vision"
 ---
 
 This project implements a modern **Convolutional Neural Network** trained on the **Fashion-MNIST** dataset.

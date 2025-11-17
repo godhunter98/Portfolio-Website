@@ -2,6 +2,7 @@
 title: "Text-to-SQL Finetuned LLMs"
 date: 2025-01-03
 hiddenInHomeList: true
+type : "Transformers"
 ---
 
 In this project, I fine-tuned small language models to convert **English questions → SQL queries**.

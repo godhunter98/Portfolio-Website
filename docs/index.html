@@ -11,7 +11,7 @@
 <meta name="description" content="Nano Labs – Harsh Malik&#39;s experiments in machine learning, AI tooling, and financial systems.">
 <meta name="author" content="Harsh Malik">
 <link rel="canonical" href="https://godhunter98.github.io/Portfolio-Website/">
-<link crossorigin="anonymous" href="/Portfolio-Website/assets/css/stylesheet.cdc957abd0cbf01d8d55c72af8c4b812e7919216d17507f89de318df4ee02ff6.css" integrity="sha256-zclXq9DL8B2NVccq&#43;MS4EueRkhbRdQf4neMY307gL/Y=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/Portfolio-Website/assets/css/stylesheet.f7883a839a79cad168c8a137710e755848d238156c743809a6037a0d49deecd6.css" integrity="sha256-94g6g5p5ytFoyKE3cQ51WEjSOBVsdDgJpgN6DUne7NY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://godhunter98.github.io/Portfolio-Website/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://godhunter98.github.io/Portfolio-Website/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://godhunter98.github.io/Portfolio-Website/favicon-32x32.png">
@@ -75,9 +75,8 @@
 </script><meta property="og:url" content="https://godhunter98.github.io/Portfolio-Website/">
   <meta property="og:site_name" content="Nano Labs">
   <meta property="og:title" content="Home">
-  <meta property="og:description" content=" Powerhub Playground 🚀 A home for my experiments in machine learning, AI &#43; LLMs, and financial systems. Small models, practical tools, and ideas I’m testing end-to-end. Featured Projects 📌 nano_transformers From-scratch decoder-only transformer trained on Shakespeare, inspired by nanoGPT.
-Transformers · PyTorch · NLP Text-to-SQL LLMs Fine-tuned models that turn English questions into SQL queries for analytics workflows.
-LLMs · SQL · Prompting Portfolio CLI Tracker Command-line portfolio tracker using SQLite &#43; Yahoo Finance to monitor holdings.">
+  <meta property="og:description" content=" Powerhub Playground 🚀 A home for my experiments in machine learning, AI &#43; LLMs, and financial systems. Small models, practical tools, and ideas I’m testing end-to-end. Harsh Malik ML, Data &amp; Finance
+Product Analyst – AI &amp; Data at Citi. I build ML-powered tools and experiments at the intersection of models, workflow, and finance. ">
   <meta property="og:locale" content="en-us">
   <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
@@ -150,8 +149,16 @@ LLMs · SQL · Prompting Portfolio CLI Tracker Command-line portfolio tracker us
         </ul>
     </nav>
 </header>
-<main class="main"> 
-<div class="post-content"><section class="home-hero">
+<main class="main">
+<main class="main projects-page">
+
+  
+  <header class="page-header">
+    <h1>Home</h1>
+    
+      <div class="page-description">
+        <!-- Hero spans full width -->
+<section class="home-hero">
   <h1>Powerhub Playground 🚀</h1>
   <p>
     A home for my experiments in <strong>machine learning</strong>, <strong>AI + LLMs</strong>, and
@@ -159,33 +166,105 @@ LLMs · SQL · Prompting Portfolio CLI Tracker Command-line portfolio tracker us
     testing end-to-end.
   </p>
 </section>
-<section class="home-projects">
-  <h2>Featured Projects 📌 </h2>
-  <div class="project-grid">
-    <a class="project-card" href="projects/nano_transformers/">
-      <h3>nano_transformers</h3>
-      <p>From-scratch decoder-only transformer trained on Shakespeare, inspired by nanoGPT.</p>
-      <span class="project-tags">Transformers · PyTorch · NLP</span>
-    </a>
-    <a class="project-card" href="projects/finetuned_sql_llms/">
-      <h3>Text-to-SQL LLMs</h3>
-      <p>Fine-tuned models that turn English questions into SQL queries for analytics workflows.</p>
-      <span class="project-tags">LLMs · SQL · Prompting</span>
-    </a>
-    <a class="project-card" href="projects/portfolio_sql_cli_tool/">
-      <h3>Portfolio CLI Tracker</h3>
-      <p>Command-line portfolio tracker using SQLite + Yahoo Finance to monitor holdings.</p>
-      <span class="project-tags">Python · SQLite · Finance</span>
-    </a>
-    <a class="project-card" href="projects/image_recognition_model/">
-      <h3>Fashion CNN (98% Acc.)</h3>
-      <p>Convolutional neural network on Fashion-MNIST with a small Streamlit demo app.</p>
-      <span class="project-tags">Computer Vision · PyTorch</span>
-    </a>
+<!-- Sidebar + featured projects side by side -->
+<div class="home-layout">
+  <!-- Left sidebar profile card -->
+  <aside class="home-sidebar">
+    <div class="sidebar-card">
+      <div class="sidebar-avatar">
+        <!-- If you have an image in static/images/profile.jpg, use this -->
+        <img src="/Portfolio-Website/images/profile.jpg" alt="Harsh Malik" />
+      </div>
+      <h2 class="sidebar-name">Harsh Malik</h2>
+      <p class="sidebar-title">ML, Data & Finance</p>
+      <p class="sidebar-blurb">
+        Product Analyst – AI & Data at Citi. I build ML-powered tools and
+        experiments at the intersection of models, workflow, and finance.
+      </p>
+      <div class="sidebar-links">
+        <a href="../about/">About</a>
+        <a href="../projects/">Projects</a>
+        <a href="../get_in_touch/">Get in touch</a>
+      </div>
+      <div class="sidebar-social">
+        <a href="https://github.com/godhunter98" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/harshmalik98/" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </aside>
+  <!-- Main column: Featured Projects -->
+  <div class="home-main">
+    <section class="home-projects">
+      <h2>Featured Projects 📌</h2>
+      <div class="project-grid">
+        <a class="project-card project-card--smol" href="projects/nano_transformers/">
+          <div class="project-card-head">
+            <span class="project-type">Transformers</span>
+          </div>
+          <div class="project-card-body">
+            <h3>nano_transformers</h3>
+            <p>From-scratch decoder-only transformer trained on Shakespeare, inspired by nanoGPT.</p>
+            <div class="project-tags">Transformers · PyTorch · NLP</div>
+          </div>
+          <div class="project-card-footer">
+            <span>Explore project</span>
+          </div>
+        </a>
+        <a class="project-card project-card--smol" href="projects/finetuned_sql_llms/">
+          <div class="project-card-head">
+            <span class="project-type">Transformers</span>
+          </div>
+          <div class="project-card-body">
+            <h3>Text-to-SQL LLMs</h3>
+            <p>Fine-tuned models that turn English questions into SQL queries for analytics workflows.</p>
+            <div class="project-tags">LLMs · SQL · Prompting</div>
+          </div>
+          <div class="project-card-footer">
+            <span>Explore project</span>
+          </div>
+        </a>
+        <a class="project-card project-card--smol" href="projects/portfolio_sql_cli_tool/">
+          <div class="project-card-head">
+            <span class="project-type">Tools</span>
+          </div>
+          <div class="project-card-body">
+            <h3>Portfolio CLI Tracker</h3>
+            <p>Command-line portfolio tracker using SQLite + Yahoo Finance to monitor holdings.</p>
+            <div class="project-tags">Python · SQLite · Finance</div>
+          </div>
+          <div class="project-card-footer">
+            <span>Explore project</span>
+          </div>
+        </a>
+        <a class="project-card project-card--smol" href="projects/image_recognition_model/">
+          <div class="project-card-head">
+            <span class="project-type">Computer Vision</span>
+          </div>
+          <div class="project-card-body">
+            <h3>Fashion CNN (98% Acc.)</h3>
+            <p>Convolutional neural network on Fashion-MNIST with a small Streamlit demo app.</p>
+            <div class="project-tags">Computer Vision · PyTorch</div>
+          </div>
+          <div class="project-card-footer">
+            <span>Explore project</span>
+          </div>
+        </a>
+      </div>
+    </section>
   </div>
-</section>
-
 </div>
+      </div>
+    
+  </header>
+  
+  
+
+</main>
+
     </main>
     
 <footer class="footer">
