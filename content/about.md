@@ -18,7 +18,7 @@ If you’d like to talk about roles, collaborations, or projects, here are the e
     📧 Copy email
   </button>
   <a class="btn-ghost"
-     href="/Harsh_Malik_Resume_2025.pdf"
+     href="/Portfolio-Website/Harsh_Malik_Resume_2025.pdf"
      target="_blank"
      rel="noopener noreferrer">
     📄 View Résumé
@@ -26,7 +26,7 @@ If you’d like to talk about roles, collaborations, or projects, here are the e
 </div>
 
 <p class="about-more-contact">
-  Prefer LinkedIn or want more options? See the <a href="../get-in_touch/">Get in Touch</a> page.
+  Prefer LinkedIn or want more options? See the <a href="/Portfolio-Website/get_in_touch/">Get in Touch</a> page.
 </p>
 
 ---

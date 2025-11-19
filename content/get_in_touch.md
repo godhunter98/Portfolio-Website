@@ -24,7 +24,7 @@ Whether it’s a potential role, a side project, or just a technical conversatio
    rel="noopener noreferrer">
   📄 View Résumé
   </a> 
-  
+ 
 </div>
 
 ---

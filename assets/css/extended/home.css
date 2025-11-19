@@ -770,4 +770,22 @@
     border: 1px solid rgba(0, 0, 0, 0.12);
     background: rgba(255, 255, 255, 0.9);
   }
+
+  /* Keep card colors in sync with dark mode on phones */
+  [data-theme="dark"] .home-layout .home-projects .project-card--smol .project-card-head {
+    background: linear-gradient(135deg, #4c1d95, #581c87);
+    color: #e5e7eb;
+  }
+
+  [data-theme="dark"] .home-layout .home-projects .project-card--smol .project-type {
+    background: rgba(255, 255, 255, 0.08);
+    color: #e5e7eb;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  [data-theme="dark"] .home-layout .home-projects .project-card--smol .project-card-footer span {
+    background: rgba(15, 23, 42, 0.9);
+    color: #e5e7eb;
+    border-color: rgba(148, 163, 184, 0.6);
+  }
 }

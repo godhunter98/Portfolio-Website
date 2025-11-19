@@ -29,9 +29,9 @@ title: "Home"
         experiments at the intersection of models, workflow, and finance.
       </p>
       <div class="sidebar-links">
-        <a href="../about/">About</a>
-        <a href="../projects/">Projects</a>
-        <a href="../get_in_touch/">Get in touch</a>
+        <a href="/Portfolio-Website/about/">About</a>
+        <a href="/Portfolio-Website/projects/">Projects</a>
+        <a href="/Portfolio-Website/get_in_touch/">Get in touch</a>
       </div>
       <div class="sidebar-social">
         <a href="https://github.com/godhunter98" target="_blank" rel="noopener noreferrer">
